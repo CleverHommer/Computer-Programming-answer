@@ -27,7 +27,7 @@
 ## 4. 简述C语言程序设计一般有哪几个工作阶段？
 需求分析与设计 → 编码 → 编译 →（链接 →） 测试与调试 → 维护
 
-## 5. 编写一个完整C程序，运行时输出一下图形：
+## 5. 编写一个完整C程序，运行并输出一下图形：
 ```dotnetcli
 *****
  *****
@@ -47,8 +47,8 @@ return 0;
 #include<stdio.h> 
 int main() {
     char c;
-    printf("Please input a string, if want to stop, just input Enter.\n");
-    while((c=getchar()) != EOF && c != '\n') {
+    printf("Please input a string, if want to stop, just input 0.\n");
+    while((c=getchar()) != EOF && c != '0') {
         if(c >= 'a' && c <= 'z') {
             c = c - 32;
         } else if(c >= 'A' && c <= 'Z') {
