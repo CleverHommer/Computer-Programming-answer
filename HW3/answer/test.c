@@ -1,27 +1,11 @@
 #include<stdio.h>
-
-int main() {
-
-int shu, ge, shi, bai;
-
-int qiuhe;
-
-for (shu = 100; shu < 1000; shu++) {
-
-ge = shu % 10;
-
-shi = (shu / 10) % 10;
-
-bai = shu / 100;
-
-qiuhe = ge * ge * ge + shi * shi * shi + bai * bai * bai;
-
-if (shu == qiuhe) {
-
-printf("%d\n", shu);
-
-}
-
-}
-
+int main(){
+    float a=1.75, b=1.35;
+    float c=a+b;
+    printf("%f, %.7f\n", c, c);
+    a=1.234567e10;
+    b=20;
+    c=a+b;
+    printf("%f, %f\n", c, c);
+    return 0;
 }
