@@ -24,7 +24,7 @@ int main(){
     m[1]=calc1(n,x,y);
     m[2]=calc2(n,x,y);
     m[3]=calc3(n,x);
-    n=ceil(n*0.4);
+    n=(int)(n*0.4);
     for(int i=1;i<=3;i++){
         if(m[i]>n) continue;
         if(m[i]>max){
@@ -33,7 +33,7 @@ int main(){
         }
     }
     if(meth==0){
-        printf("同学们太棒啦！");
+        printf("同学们太棒啦");
     }
     else{
         printf("%d %d",meth,max);

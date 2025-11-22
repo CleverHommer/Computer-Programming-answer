@@ -41,7 +41,7 @@ int main(){
         }
     }
     if(meth==0){
-        printf("同学们太棒啦！");
+        printf("同学们太棒啦");
     }
     else{
         printf("%d %d",meth,max);

@@ -1,6 +1,6 @@
 #include<stdio.h>
 struct problem{
-    char name[35];
+    char name[25];
     int h,t;
 }p[105]={0};
 void sort(struct problem* p,int n,int mode){

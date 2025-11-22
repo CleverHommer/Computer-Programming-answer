@@ -39,7 +39,7 @@ int main(){
     mode=rand()%2+1;
     printf("%d %d %d\n",n,m,mode);
     for(int i=0;i<n;i++){
-        len=(rand()*443)%18+3;
+        len=(rand()*443)%18+2;
         for(int j=0;j<len;j++){
             cap=(rand()*19)%5;
             p[i].name[j]=(rand()*31)%26+97;
